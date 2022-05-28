@@ -32,6 +32,6 @@ foreach ($semuaPengeluranDenganNamaDepartemenArray as $row) {
 //     ['userId' => 2, 'userName' => 'Superman', 'userAddress' => 'Metropolis'],
 // ];
 // $templateProcessor->save();
-$pathToSave = __DIR__ . '/pengeluaran.docx';
+$pathToSave = __DIR__ . '/LaporanPengeluaran.docx';
 $templateProcessor->saveAs($pathToSave);
 header("location:../../pages/laporan.php");

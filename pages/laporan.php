@@ -40,7 +40,7 @@
                                     <td style="vertical-align: middle;"><?= menjumlahkanJumlahPemasukan()[0]['jumlah'] ?></td>
                                     <td style="vertical-align: middle;">
                                         <a href="../functions/pemasukan/export-pemasukan.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Pemasukan</a>
-                                        <a href="../functions/pemasukan/resultpemasukan.docx" download>
+                                        <a href="../functions/pemasukan/LaporanPemasukan.docx" download>
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pemasukan</button>
                                         </a>
                                     </td>
@@ -52,7 +52,7 @@
                                     <td style="vertical-align: middle;"><?= menjumlahkanJumlahPengeluaran()[0]['jumlah'] ?></td>
                                     <td style="vertical-align: middle;">
                                         <a href="../functions/pengeluaran/export-pengeluaran.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Pengeluaran</a>
-                                        <a href="../functions/pengeluaran/pengeluaran.docx" download>
+                                        <a href="../functions/pengeluaran/LaporanPengeluaran.docx" download>
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pengeluaran</button>
                                         </a>           
                                     </td>                  
@@ -64,17 +64,24 @@
                                     
                                     <td style="vertical-align: middle;"><?= menjumlahkanJumlahAnggaran()['jumlah'] ?></td>
                                     <td style="vertical-align: middle;">
-                                        <a href="../functions/anggaran/export-anggaran.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Anggaran</a>
+                                        <a href="../functions/anggaran/export-anggaran.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Anggaran</a>
+                                        <a href="../functions/anggaran/LaporanAnggaran.docx" download>
+                                            <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pengeluaran</button>
+                                        </a>           
+
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align: middle; text-align: center;">4</td>
                                     <td style="vertical-align: middle;">Keseluruhan</td>
                                     
-                                    <td style="vertical-align: middle;"><?= (int)(menjumlahkanJumlahPemasukan()[0]['jumlah']) + (int)(menjumlahkanJumlahCashAdvance()['jumlah']) + (int)(menjumlahkanJumlahPengeluaran()[0]['jumlah'])
+                                    <td style="vertical-align: middle;"><?= (int)(menjumlahkanJumlahPemasukan()[0]['jumlah']) - (int)(menjumlahkanJumlahPengeluaran()[0]['jumlah'])
                                                                         ?></td>
                                     <td style="vertical-align: middle;">
-                                        <a href="../functions/export-keseluruhan.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Keseluruhan</a>
+                                        <a href="../functions/export-keseluruhan.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Keseluruhan</a>
+                                        <a href="../functions/LaporanKeseluruhan.docx" download>
+                                            <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Keseluruhan</button>
+                                        </a>  
                                     </td>
                                 </tr>
                             </tbody>
