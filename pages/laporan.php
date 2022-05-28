@@ -29,17 +29,17 @@
                                     <th style="vertical-align: middle; text-align: center;">No.urut</th>
                                     <th>Nama</th>
                                     <th>Jumlah Total Uang</th>
-                                    <th>Download</th>
+                                    <th style="vertical-align: middle; text-align: center;">Download</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td style="vertical-align: middle; text-align: center;">1</td>
                                     <td style="vertical-align: middle;">Pemasukan</td>
-                                    
+
                                     <td style="vertical-align: middle;"><?= menjumlahkanJumlahPemasukan()[0]['jumlah'] ?></td>
-                                    <td style="vertical-align: middle;">
-                                        <a href="../functions/pemasukan/export-pemasukan.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Pemasukan</a>
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/pemasukan/export-pemasukan.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Update Data Laporan Pemasukan</a> ||
                                         <a href="../functions/pemasukan/LaporanPemasukan.docx" download>
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pemasukan</button>
                                         </a>
@@ -48,45 +48,50 @@
                                 <tr>
                                     <td style="vertical-align: middle; text-align: center;">2</td>
                                     <td style="vertical-align: middle;">Pengeluaran</td>
-                                    
+
                                     <td style="vertical-align: middle;"><?= menjumlahkanJumlahPengeluaran()[0]['jumlah'] ?></td>
-                                    <td style="vertical-align: middle;">
-                                        <a href="../functions/pengeluaran/export-pengeluaran.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Pengeluaran</a>
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/pengeluaran/export-pengeluaran.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Update Data Laporan Pengeluaran</a> ||
                                         <a href="../functions/pengeluaran/LaporanPengeluaran.docx" download>
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pengeluaran</button>
-                                        </a>           
-                                    </td>                  
-                                           
+                                        </a>
+                                    </td>
+
                                 </tr>
                                 <tr>
                                     <td style="vertical-align: middle; text-align: center;">3</td>
                                     <td style="vertical-align: middle;">Anggaran</td>
-                                    
+
                                     <td style="vertical-align: middle;"><?= menjumlahkanJumlahAnggaran()['jumlah'] ?></td>
-                                    <td style="vertical-align: middle;">
-                                        <a href="../functions/anggaran/export-anggaran.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Anggaran</a>
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/anggaran/export-anggaran.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Update Data Laporan Anggaran</a> ||
                                         <a href="../functions/anggaran/LaporanAnggaran.docx" download>
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pengeluaran</button>
-                                        </a>           
+                                        </a>
 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align: middle; text-align: center;">4</td>
                                     <td style="vertical-align: middle;">Keseluruhan</td>
-                                    
+
                                     <td style="vertical-align: middle;"><?= (int)(menjumlahkanJumlahPemasukan()[0]['jumlah']) - (int)(menjumlahkanJumlahPengeluaran()[0]['jumlah'])
                                                                         ?></td>
-                                    <td style="vertical-align: middle;">
-                                        <a href="../functions/export-keseluruhan.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Update Data Laporan Keseluruhan</a>
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/export-keseluruhan.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Update Data Laporan Keseluruhan</a> ||
                                         <a href="../functions/LaporanKeseluruhan.docx" download>
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Keseluruhan</button>
-                                        </a>  
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div class="pl-3 pr-3">
+                    <hr>
+                    <h6>*) Untuk mendapatkan data laporan terbaru, tekan tombol<b>"Update Data Laporan.."</b> terlebih dahulu, Kemudian tekan baru <b>"Download laporan...."</b>         </h6>
+                    <hr>
                 </div>
             </div>
         </div>
