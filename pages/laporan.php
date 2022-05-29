@@ -66,7 +66,7 @@
                                     <td style="vertical-align: middle; text-align: center;">
                                         <a href="../functions/anggaran/export-anggaran.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Update Data Laporan Anggaran</a> ||
                                         <a href="../functions/anggaran/LaporanAnggaran.docx" download>
-                                            <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pengeluaran</button>
+                                            <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Anggaran</button>
                                         </a>
 
                                     </td>
