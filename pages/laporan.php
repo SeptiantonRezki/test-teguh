@@ -29,7 +29,8 @@
                                     <th style="vertical-align: middle; text-align: center;">No.urut</th>
                                     <th>Nama</th>
                                     <th>Jumlah Total Uang</th>
-                                    <th style="vertical-align: middle; text-align: center;">Download</th>
+                                    <th style="vertical-align: middle; text-align: center;">Download Doc</th>
+                                    <th style="vertical-align: middle; text-align: center;">Download Excel</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -44,6 +45,9 @@
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pemasukan</button>
                                         </a>
                                     </td>
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/pemasukan/export-pemasukan-excel.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Download Laporan Pemasukan Excel</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align: middle; text-align: center;">2</td>
@@ -56,7 +60,9 @@
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Pengeluaran</button>
                                         </a>
                                     </td>
-
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/pengeluaran/export-pengeluaran-excel.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Downlad Laporan Pengeluaran Excel</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align: middle; text-align: center;">3</td>
@@ -68,7 +74,9 @@
                                         <a href="../functions/anggaran/LaporanAnggaran.docx" download>
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Anggaran</button>
                                         </a>
-
+                                    </td>
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/anggaran/export-anggaran-excel.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Download Laporan Anggaran Excel</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -83,6 +91,9 @@
                                             <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><em class="fas fa-download fa-sm text-white-50"></em> Download Laporan Keseluruhan</button>
                                         </a>
                                     </td>
+                                    <td style="vertical-align: middle; text-align: center;">
+                                        <a href="../functions/export-keseluruhan-excel.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Download Laporan Keseluruhan</a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -90,7 +101,7 @@
                 </div>
                 <div class="pl-3 pr-3">
                     <hr>
-                    <h6>*) Untuk mendapatkan data laporan terbaru, tekan tombol<b>"Update Data Laporan.."</b> terlebih dahulu, Kemudian tekan baru <b>"Download laporan...."</b>         </h6>
+                    <h6>*) Untuk mendapatkan data laporan terbaru, tekan tombol<b>"Update Data Laporan.."</b> terlebih dahulu, Kemudian tekan baru <b>"Download laporan...."</b> </h6>
                     <hr>
                 </div>
             </div>
