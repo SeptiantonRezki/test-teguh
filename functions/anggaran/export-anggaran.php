@@ -9,7 +9,7 @@
 	$datenowv2 = date('d/m/Y');
 	$templateProcessor->setValue('datenow', $datenow);
 	$templateProcessor->setValue('datenowv2', $datenowv2);
-	$templateProcessor->setValue('Subtotal', menjumlahkanJumlahAnggaran()['jumlah']);
+	$templateProcessor->setValue('subtotal', menjumlahkanJumlahAnggaran()['jumlah']);
 
 	// $templateProcessor->cloneBlock('block_name', 3, true, true);
 	// $replacements = array(
