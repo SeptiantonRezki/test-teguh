@@ -20,7 +20,7 @@ function editCashAdvance($id_cashadvance, $id_tahunanggaran, $id_anggaran, $kete
         // jika status persetujuan diterima dan anggaran masih ada sisanya atau > 0
         if ($resultAnggaran['status_persetujuan'] == "diterima" && $resultAnggaran["sisa"] > 0) {
             //  jika  status pengambilan selesai => masih belum diambil
-            var_dump($resultCashAdvance);
+            // var_dump($resultCashAdvance);
             if ($resultCashAdvance["status_pengambilan"] == "belum"&& $status_pengambilan == "selesai") {
                 $resultSisaAnggaran = (int)($resultAnggaran['sisa']) - $jumlah;
                 if ($resultSisaAnggaran > 0) {

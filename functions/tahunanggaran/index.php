@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 // menambahkan pengeluaran dan mengubah pengeluaran
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    var_dump($_POST);
+    // var_dump($_POST);
     if (isset($_POST["id_tahunanggaran"])  && isset($_POST["tahun_anggaran"])  && isset($_POST["saldo_anggaran"]) && isset($_POST["keterangan"]) &&  isset($_POST["tambah_anggaran"])) {
         $id_tahunanggaran = (int)($_POST["id_tahunanggaran"]);
         $tahun_anggaran = (int)($_POST["tahun_anggaran"]);
